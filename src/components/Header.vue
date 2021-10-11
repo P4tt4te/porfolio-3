@@ -1,7 +1,23 @@
+<script>
+import { useI18n } from 'vue-i18n'
+
+export default {
+  name: 'App',
+  setup() {
+    const { locale, t } = useI18n({
+      inheritLocale: true
+    })
+
+    return { locale, t }
+  }
+}
+</script>
+
+
 <template>
     <header>
         <div>
-            <p>Test <span>{{ $t('test') }}</span></p>
+            <p>Test <span>{{ t('test') }}</span></p>
         </div>
         <div class="">
             <img src="/header/flags/france.svg" alt="">
@@ -9,5 +25,3 @@
         </div>
     </header>
 </template>
-
-<i18n src="../lang.json"></i18n>
