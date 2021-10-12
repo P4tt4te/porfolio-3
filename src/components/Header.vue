@@ -7,15 +7,21 @@ export default {
     const { locale, t } = useI18n({
       inheritLocale: true
     })
-    
     return { locale, t }
   },
+  data() {
+    return {
+      srcfr : "/header/flags/france.svg",
+      srcen : "/header/flags/usa.svg"
+    }
+  },
   methods: {
-      changeLanguage(lang) {
-        if (lang == 1) {
-            locale = "fr";
+      changeLanguage() {
+        var langue;
+        if (langue == "en") {
+            langue = "fr";
         } else {
-            locale = "en";
+            langue = "en";
         }
     }
   }
@@ -30,7 +36,7 @@ export default {
             <p>Test <span>{{ t('test') }}</span></p>
         </div>
         <div>
-            <img @click="changeLanguage(1)" src="/header/flags/france.svg" alt="">
+            <img @click="changeLanguage()" src="/header/flags/france.svg" alt="">
             <img src="/header/flags/usa.svg" alt="">
         </div>
     </header>
