@@ -31,13 +31,13 @@ export default {
 
 
 <template>
-    <header>
+    <header class="flex justify-between">
         <div>
-            <p>Test <span>{{ t('test') }}</span></p>
+            <p>Test menu :<span>{{ t('test') }}</span></p>
         </div>
-        <div>
-            <img @click="changeLanguage()" src="/header/flags/france.svg" alt="">
-            <img src="/header/flags/usa.svg" alt="">
+        <div class="flex space-x-5">
+            <img @click="changeLanguage()" src="/src/assets/header/flags/france.svg" alt="">
+            <img src="/src/assets/header/sunset.svg" alt="">
         </div>
     </header>
 </template>
