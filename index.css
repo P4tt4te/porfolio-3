@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-    
+    @font-face {
+        font-family: Sunydale;
+        font-weight: 500;
+        src: url(./fonts/Sunydale.ttf) format("ttf");
+    }
     #app {
         @apply font-Inter;
     }
+    
 }

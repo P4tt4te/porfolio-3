@@ -7,6 +7,7 @@ import Title from './components/Title.vue'
 
 <template>
   <Header />
+  <Title />
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
