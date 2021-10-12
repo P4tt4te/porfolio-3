@@ -6,6 +6,9 @@ module.exports = {
       blue: {
         light: '#00D1FF',
         dark: '#0066FF',
+      },
+      white: {
+        DEFAULT: '#FFFFFF',
       }
     },
     extend: {
