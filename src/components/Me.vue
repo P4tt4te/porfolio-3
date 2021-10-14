@@ -1,3 +1,12 @@
+<script>
+var test = "yo";
+console.log(test);
+
+
+
+</script>
+
+
 <template>
     <div>
         <img src="../assets/me/pp.png" alt="">
