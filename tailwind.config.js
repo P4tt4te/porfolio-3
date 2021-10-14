@@ -9,6 +9,9 @@ module.exports = {
       },
       white: {
         DEFAULT: '#FFFFFF',
+      },
+      grey: {
+        DEFAULT: '#363636',
       }
     },
     extend: {

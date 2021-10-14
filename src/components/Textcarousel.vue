@@ -10,10 +10,9 @@ export default defineComponent({
 
 
 <template>
-    <div>
-        <span v-for="subject in subjects">
+    <div class="text-6xl">
+        <span class="text-grey" v-for="subject in subjects">
             {{ subject.name }}
         </span>
     </div>
-    <p>{{ nom }}</p>
 </template>
