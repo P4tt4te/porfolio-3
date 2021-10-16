@@ -10,8 +10,8 @@ export default defineComponent({
 
 
 <template>
-    <div class="text-6xl">
-        <span class="text-grey" v-for="subject in subjects">
+    <div data-scroll-container class="text-6xl">
+        <span data-scroll data-scroll-position="left" class="text-grey" v-for="subject in subjects">
             {{ subject.name }}
         </span>
     </div>

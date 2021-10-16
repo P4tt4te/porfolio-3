@@ -1,3 +1,15 @@
+<script type="module">
+  import LocomotiveScroll from 'locomotive-scroll';
+  window.addEventListener('load',scroll);
+
+  function scroll( evt ){
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+  }
+</script>
+
 <!DOCTYPE html>
 <html lang="en" class="p-2 bg-gradient-to-r from-blue-light to-blue-dark">
   <head>
@@ -10,8 +22,11 @@
     <title>Edward Brunetiere | Portfolio</title>
   </head>
   <body class="py-10 px-20 bg-white">
-      <div id="app" class="space-y-20"></div>
+      <div data-scroll-container id="app" class="space-y-20"></div>
       <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+
 <!-- bg-gradient-to-r from-blue-light to-blue-dark -->
