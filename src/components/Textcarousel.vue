@@ -1,5 +1,5 @@
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
     data() {
@@ -8,10 +8,9 @@ export default defineComponent({
 })
 </script>
 
-
 <template>
-    <div data-scroll-container class="text-6xl">
-        <span data-scroll data-scroll-position="left" class="text-grey" v-for="subject in subjects">
+    <div data-scroll-section class="text-6xl">
+        <span data-scroll class="text-grey" v-for="subject in subjects">
             {{ subject.name }}
         </span>
     </div>
