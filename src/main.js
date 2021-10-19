@@ -15,4 +15,11 @@ const i18n = createI18n({
   })
 
 const app = createApp(App);
+
+
+
 app.use(i18n).mount('#app');
+
+console.log(i18n.global.locale._value);
+i18n.global.locale._value = 'fr';
+console.log(i18n.global.locale._value);

@@ -3,7 +3,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     data() {
-        return { subjects: [{ name: 'UX/UI Design |'},{ name: 'Branding graphic design |'},{ name: 'Website development |'}]}
+        return { subjects: [{ name: 'UX/UI Design'},{ name: 'Branding graphic design'},{ name: 'Website development'}]}
     }
 })
 </script>

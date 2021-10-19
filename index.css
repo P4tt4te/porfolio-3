@@ -18,6 +18,21 @@
     color: white;
 }
 
+@keyframes animtest {
+  0% {
+  stroke-dashoffset: 3200;
+}
+
+100%
+{
+  stroke-dashoffset:0;
+}
+}
+
+#nom {
+  animation: animtest 2s ease-in-out;
+}
+
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
     overflow: hidden; }
