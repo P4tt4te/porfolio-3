@@ -1,7 +1,7 @@
 
 <template>
-    <div data-scroll-section>
-        <img data-scroll data-scroll-speed="4" src="../assets/me/pp.png" alt=""> 
-        <p data-scroll data-scroll-speed="2">Je m'appelle Edward Brunetiere et je viens de Poitiers en France. J'ai actuellement 19 ans et je suis en 2ème année de DUT MMI à Laval. Je recherche un stage de 10 semaines en dev front.</p>
+    <div data-scroll-section class="flex flex-col items-center">
+        <img class="max-w-3xl" data-scroll data-scroll-speed="4" src="../assets/me/pp.png" alt=""> 
+        <p class="max-w-3xl" data-scroll data-scroll-speed="2">Je m'appelle Edward Brunetiere et je viens de Poitiers en France. J'ai actuellement 19 ans et je suis en 2ème année de DUT MMI à Laval. Je recherche un stage de 10 semaines en dev front.</p>
     </div>
 </template>

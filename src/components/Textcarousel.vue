@@ -9,7 +9,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div data-scroll-section class="text-6xl">
+    <div id="direction" data-scroll-section class="text-6xl">
         <span data-scroll class="text-grey" v-for="subject in subjects">
             {{ subject.name }}
         </span>
