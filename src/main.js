@@ -7,7 +7,7 @@ import fr from './locales/fr.json';
 import en from './locales/en.json';
 
 const i18n = createI18n({
-    locale: 'en',
+    locale: 'fr',
     messages: {
       en,
       fr
@@ -20,6 +20,3 @@ const app = createApp(App);
 
 app.use(i18n).mount('#app');
 
-console.log(i18n.global.locale._value);
-i18n.global.locale._value = 'fr';
-console.log(i18n.global.locale._value);
