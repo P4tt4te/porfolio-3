@@ -12,7 +12,6 @@ import Textcarousel from './components/Textcarousel.vue'
 <Title />
 <Me />
 <Textcarousel />
-
   
   
   <img alt="Vue logo" src="./assets/logo.png" />

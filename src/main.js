@@ -2,21 +2,17 @@ import { createApp } from 'vue';
 import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import '../index.css';
-
-import fr from './locales/fr.json';
-import en from './locales/en.json';
+import messages from '@intlify/vite-plugin-vue-i18n/messages';
 
 const i18n = createI18n({
-    locale: 'fr',
-    messages: {
-      en,
-      fr
-    }
+    legacy: true,
+    locale: 'en',
+    messages
   })
 
 const app = createApp(App);
 
 
-
-app.use(i18n).mount('#app');
+app.use(i18n);
+app.mount('#app');
 
