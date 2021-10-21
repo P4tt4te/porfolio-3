@@ -3,32 +3,10 @@
 import { useI18n } from 'vue-i18n';
 
 export default {
-  name: 'App',
-    setup() {
-    const { t, locale } = useI18n({
-      inheritLocale: true,
-      useScope: 'local'
-    })
-    return { t, locale }
+  mounted() {
+    console.log(this.$t('test'));
   },
-  data() {
-    return {
-      srcfr : "/header/flags/france.svg",
-      srcen : "/header/flags/usa.svg"
-    }
-  },
-  methods: {
-      changeLanguage() {
-        var langue;
-        if (langue == "en") {
-            langue = "fr";
-        } else {
-            langue = "en";
-        }
-    }
-  }
-  
-}
+};
 </script>
 
 
@@ -36,9 +14,9 @@ export default {
 <template>
     <header class="flex justify-between">
         <div>
-            <p>Test menu :<span>{{t('test')}}</span></p>
+            <p>Test menu :<span>{{ $t('test')}}</span></p>
         </div>
-        <select v-model="locale">
+        <select v-model="$i18n.locale">
           <option value="en">en</option>
           <option value="fr">fr</option>
         </select>
@@ -48,3 +26,5 @@ export default {
         </div>
     </header>
 </template>
+
+

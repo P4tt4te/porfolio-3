@@ -7,6 +7,6 @@ import Vuei18n from '@intlify/vite-plugin-vue-i18n'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(),Vuei18n({
-    include: path.resolve(__dirname, './src/locales/**'),compositionOnly: true
+    include: path.resolve(__dirname, './src/locales/**'),
   })]
 })
