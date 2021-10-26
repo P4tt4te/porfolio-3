@@ -18,6 +18,19 @@
     color: white;
 }
 
+html {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
+#cursor {
+  position:absolute;
+  pointer-events: none !important;
+}
+
 @keyframes animtest {
   0% {
   stroke-dashoffset: 3200;

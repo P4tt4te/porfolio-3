@@ -17,3 +17,29 @@ const app = createApp(App);
 app.use(i18n);
 app.mount('#app');
 
+function cursor() {
+
+  if (window.matchMedia("(min-width: 1025px)").matches) {
+    let mousePosX = 0,
+      mousePosY = 0;
+    const curseur = document.querySelector('#cursor');
+    curseur.addEventListener('click',non);
+    document.addEventListener('mousemove', coor);
+    document.addEventListener('scroll',coor);
+
+    function non(evt) {
+      evt.preventDefault();
+    }
+
+    function coor(e) {
+      mousePosX = e.clientX - 10;
+      mousePosY = e.clientY - 10;
+      curseur.style.top = mousePosY + "px";
+      curseur.style.left = mousePosX + "px";
+
+    }
+  }
+
+}
+
+cursor();
