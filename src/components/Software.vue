@@ -3,19 +3,27 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     data() {
-        return { subjects: [{ name: 'UX/UI Design'},{ name: 'Branding graphic design'},{ name: 'Website development'}]}
+        return { devs: [{ name: 'HTML5'},{ name: 'CSS3'},{ name: 'JS Vanilla'},{ name: 'Vue.js'},{ name: 'NPM'},{ name: 'SQL - NoSQL'},{ name: 'Webflow (CMS)'},{ name: 'Java'}], graphics: [{ name: 'Figma'},{ name: 'Affinity'},{ name: 'Photoshop'},{ name: 'Illustrator'},{ name: 'Da Vinci Resolve'},{ name: 'Premier Pro'},{ name: 'Blender'}]}
     }
 })
 </script>
 
 
 <template>
-    <div>
+    <div data-scroll-section>
+        <div>
+            <span v-for="dev in devs">{{ dev.name }}</span>
+        </div>
         <div>
            <p>Dev</p> 
         </div>
+    </div>
+    <div data-scroll-section>
         <div>
-            <span>HTML5</span>
+            <span v-for="graphic in graphics">{{ graphic.name }}</span>
+        </div>
+        <div>
+            <p>Graphic</p>
         </div>
     </div>
 </template>

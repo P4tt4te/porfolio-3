@@ -5,6 +5,7 @@ import Header from './components/Header.vue'
 import Title from './components/Title.vue'
 import Me from './components/Me.vue'
 import Textcarousel from './components/Textcarousel.vue'
+import Software from './components/Software.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Textcarousel from './components/Textcarousel.vue'
 <Title />
 <Me />
 <Textcarousel />
+<Software />
   
   
   <img alt="Vue logo" src="./assets/logo.png" />
