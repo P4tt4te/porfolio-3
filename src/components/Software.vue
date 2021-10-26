@@ -10,20 +10,20 @@ export default defineComponent({
 
 
 <template>
-    <div data-scroll-section>
-        <div>
+    <div data-scroll-section class="flex">
+        <div class="text-6xl flex flex-col">
             <span v-for="dev in devs">{{ dev.name }}</span>
         </div>
         <div>
-           <p>Dev</p> 
+           <p class="font-Sunydale">Dev</p> 
         </div>
     </div>
-    <div data-scroll-section>
-        <div>
+    <div data-scroll-section class="flex">
+        <div class="text-6xl flex flex-col">
             <span v-for="graphic in graphics">{{ graphic.name }}</span>
         </div>
         <div>
-            <p>Graphic</p>
+            <p class="font-Sunydale">Graphic</p>
         </div>
     </div>
 </template>
