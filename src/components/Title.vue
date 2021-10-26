@@ -5,7 +5,7 @@
             <img class="" src="../assets/title/montagne.png" alt="">
             
         </div>
-        <h2 data-scroll data-scroll-speed="2" class="text-center text-2xl">Webdesign and developpement.</h2>
+        <h2 data-scroll data-scroll-speed="2" class="text-center text-2xl">{{ $t('title.desc') }}</h2>
     </div>
 </template>
 <style>
