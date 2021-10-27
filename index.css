@@ -19,11 +19,12 @@
 }
 
 html {
-  cursor: none;
+  cursor: url('/cursorbasic.svg'), pointer;
 }
 
-a {
-  cursor: none;
+
+img:hover {
+  cursor:crosshair;
 }
 
 #cursor {

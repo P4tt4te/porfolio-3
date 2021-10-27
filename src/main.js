@@ -32,10 +32,13 @@ function cursor() {
     }
 
     function coor(e) {
-      mousePosX = e.clientX - 10;
-      mousePosY = e.clientY - 10;
-      curseur.style.top = mousePosY + "px";
-      curseur.style.left = mousePosX + "px";
+      setTimeout(function() {
+        mousePosX = e.clientX - 10.5;
+        mousePosY = e.clientY - 10.5;
+        curseur.style.top = mousePosY + "px";
+        curseur.style.left = mousePosX + "px";
+      },10);
+      
 
     }
   }
