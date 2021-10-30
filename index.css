@@ -20,6 +20,8 @@
 
 html {
   cursor: url('/cursorbasic.svg'), pointer;
+  
+
 }
 
 
@@ -32,15 +34,23 @@ img:hover {
   pointer-events: none !important;
 }
 
-@keyframes animtest {
-  0% {
-  stroke-dashoffset: 3200;
+
+.ppeffet:hover {
+  animation: coloranim 2s infinite alternate ease-in-out;
 }
 
-100%
-{
-  stroke-dashoffset:0;
-}
+@keyframes coloranim {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(180deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 #nom {
