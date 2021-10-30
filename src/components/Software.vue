@@ -14,8 +14,9 @@ export default defineComponent({
         <div class="text-6xl flex flex-col">
             <span v-for="dev in devs">{{ dev.name }}</span>
         </div>
-        <div>
-           <p class="font-Sunydale text-5xl">Dev</p> 
+        <div class="relative">
+           <p class="font-Sunydale text-5xl absolute top-16 left-10">Dev</p>
+           <img class="w-3/4" src="/src/assets/software/blob1.svg" alt=""> 
         </div>
     </div>
     <div data-scroll-section class="flex justify-center">
