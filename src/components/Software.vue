@@ -10,7 +10,8 @@ export default defineComponent({
 
 
 <template>
-    <div data-scroll-section class="flex justify-center">
+    <div data-scroll-section class="flex flex-col">
+        <div data-scroll class="flex justify-around">
         <div class="text-6xl flex flex-col">
             <span v-for="dev in devs">{{ dev.name }}</span>
         </div>
@@ -19,12 +20,15 @@ export default defineComponent({
            <img class="w-3/4" src="/src/assets/software/blob1.svg" alt=""> 
         </div>
     </div>
-    <div data-scroll-section class="flex justify-center">
+    <div data-scroll class="flex justify-around">
         <div class="text-6xl flex flex-col">
             <span v-for="graphic in graphics">{{ graphic.name }}</span>
         </div>
-        <div>
-            <p class="font-Sunydale text-5xl">Graphic</p>
+        <div class="relative">
+            <p class="font-Sunydale text-5xl absolute top-16 left-10">Graphic</p>
+            <img class="w-3/4" src="/src/assets/software/blob2.svg" alt="">
         </div>
     </div>
+    </div>
+    
 </template>
