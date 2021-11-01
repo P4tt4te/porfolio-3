@@ -43,9 +43,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="px-32" data-scroll-section>
+    <div class="px-32 space-y-16" data-scroll-section>
         <div class="flex space-x-16" v-for="project in projects" :key='project'>
-            <img class="w-1/4" :src="imgbuild('moosic')" alt="">
+            <img class="w-1/4" :src="imgbuild(project.name)" alt="">
             <div class="space-y-5">
                 <h3 class="text-7xl">{{ project.name }}</h3>
                 <p>{{ project.desc }}</p>
