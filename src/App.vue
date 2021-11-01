@@ -6,6 +6,7 @@ import Title from './components/Title.vue'
 import Me from './components/Me.vue'
 import Textcarousel from './components/Textcarousel.vue'
 import Software from './components/Software.vue'
+import Project from './components/Project.vue'
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import Software from './components/Software.vue'
 <Me />
 <Textcarousel />
 <Software />
-  
+<Project /> 
   
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>

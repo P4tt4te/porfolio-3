@@ -22,7 +22,7 @@ export default defineComponent({
     </div>
     <div data-scroll class="flex justify-between">
         <div class="text-6xl flex flex-col">
-            <span v-for="graphic in graphics">{{ graphic.name }}</span>
+            <span v-for="graphic in graphics" :key="graphic">{{ graphic.name }}</span>
         </div>
         <div class="relative">
             <p class="font-Sunydale text-5xl absolute top-16 left-10 text-white">Graphic</p>
