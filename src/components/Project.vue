@@ -21,8 +21,8 @@ export default defineComponent({
                     "src" : "https://github.com/P4tt4te/moosic-app"
                 },
                 {
-                    "name" : "web",
-                    "src" : "https://github.com/P4tt4te/moosic-app"
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
                 }
                 
             ]}
