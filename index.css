@@ -24,9 +24,42 @@ html {
 
 }
 
+@keyframes strike{
+  0%   { width : 0; }
+  100% { width: 100%; }
+}
 
-img:hover {
-  cursor:crosshair;
+@keyframes strikerev{
+  0%   { width : 100%; }
+  100% { width: 0; }
+}
+
+.trait {
+  position: relative;
+}
+
+.trait::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #2E383F;
+  animation-name: strikerev;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+}
+
+.trait:hover::after {
+  animation-name: strike;
+  width: 0;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
 }
 
 #cursor {
