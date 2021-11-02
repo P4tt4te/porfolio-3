@@ -38,6 +38,7 @@ html {
   position: relative;
 }
 
+
 .trait::after {
   content: ' ';
   position: absolute;

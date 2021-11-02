@@ -4,18 +4,14 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data() {
         return { projects: [
-            {"name" : "Moosic","desc" : "Moosic est un site d'écoute de webradio en ligne, il à été créer pendant notre projet tutoré de 1ère année MMI.","img": "moosic.png",links : [
+            {"name" : "OnMangeQuoi","desc" : "On mange quoi est un site qui repertorie des recettes de cuisine simple pour étudiants. J'ai réalisé la maquette mobile de ce site fictif","img": "onmangequoi",links : [
                 {
-                    "name" : "github",
-                    "src" : "https://github.com/P4tt4te/moosic-app"
-                },
-                {
-                    "name" : "web",
-                    "src" : "https://github.com/P4tt4te/moosic-app"
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
                 }
                 
             ]},
-            {"name" : "Moosic","desc" : "Moosic est un site d'écoute de webradio en ligne, il à été créer pendant notre projet tutoré de 1ère année MMI.","img": "moosic.png",links : [
+            {"name" : "Moosic","desc" : "Moosic est un site d'écoute de webradio en ligne, il à été créer pendant notre projet tutoré de 1ère année MMI.","img": "moosic",links : [
                 {
                     "name" : "github",
                     "src" : "https://github.com/P4tt4te/moosic-app"
@@ -23,6 +19,17 @@ export default defineComponent({
                 {
                     "name" : "behance",
                     "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
+                }
+                
+            ]},
+            {"name" : "Csgostuff.pw","desc" : "Csgostuff est un site qui permet d'aider les joueurs du jeu vidéo 'Counter Strike : Global Offensive' en les informants sur les prix des différents objets du jeu. Il dispose d'un système de recherche par prix et catégorie.","img": "csgostuff",links : [
+                {
+                    "name" : "github",
+                    "src" : "https://github.com/P4tt4te/csgostuffpw"
+                },
+                {
+                    "name" : "web",
+                    "src" : "https://csgostuff.pw/"
                 }
                 
             ]}
@@ -45,8 +52,8 @@ export default defineComponent({
 <template>
     <div class="px-32 space-y-16" data-scroll-section>
         <div class="flex space-x-16" v-for="project in projects" :key='project'>
-            <img class="w-1/4" :src="imgbuild(project.name)" alt="">
-            <div class="space-y-5">
+            <img class="w-1/4" :src="imgbuild(project.img)" alt="">
+            <div class="space-y-5 w-3/4">
                 <h3 class="text-7xl">{{ project.name }}</h3>
                 <p>{{ project.desc }}</p>
                 <div class="flex space-x-5">
