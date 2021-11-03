@@ -33,6 +33,7 @@ export default defineComponent({
 
 <template>
     <div id="direction" data-scroll-section>
+        <h3 data-scroll data-scroll-speed="3" class="text-8xl font-extrabold">Works.</h3>
         <swiper class="text-7xl text-grey" :slides-per-view="3" :autoplay='{ "delay": 1500, "disableOnInteraction": false }' :centeredSlides="true" :space-between="50" :loop="true" @swiper="onSwiper" @slideChange="onSlideChange">
             <swiper-slide class="text-center" v-for="subject in subjects" :key="subject">{{ subject.name }}</swiper-slide>
         </swiper>

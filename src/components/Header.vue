@@ -59,10 +59,10 @@ export default {
           </svg>
           <div id="menulist" class="flex flex-col listemenu">
             <div>
-              <span :id="'btn1'" class="trait">Me.</span>
+              <span :id="'btn1'" class="trait">About Me</span>
             </div>
             <div>
-              <span :id="'btn2'" class="trait">Software</span>
+              <span :id="'btn2'" class="trait">Tools</span>
             </div>
             <div>
               <span :id="'btn3'" class="trait">Projects</span>
