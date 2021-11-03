@@ -11,7 +11,7 @@
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <input type="submit" value="Envoyer">
+                <button type="submit">envoyer</button>
             </div>
         </form>
     </div>
