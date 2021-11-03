@@ -50,7 +50,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="px-32 space-y-16" data-scroll-section>
+    <div :id="'Projects'" class="px-32 space-y-16" data-scroll-section>
         <div class="flex space-x-16" v-for="project in projects" :key='project'>
             <img class="w-1/4" :src="imgbuild(project.img)" alt="">
             <div class="space-y-5 w-3/4">

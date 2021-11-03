@@ -10,10 +10,10 @@ export default defineComponent({
 
 
 <template>
-    <div data-scroll-section class="flex flex-col space-y-20 px-32">
+    <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-20 px-32">
         <div data-scroll class="flex justify-between">
         <div class="text-6xl flex flex-col">
-            <span v-for="dev in devs">{{ dev.name }}</span>
+            <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>
         </div>
         <div class="relative">
            <p class="font-Sunydale text-5xl absolute top-16 left-10 text-white">Dev</p>

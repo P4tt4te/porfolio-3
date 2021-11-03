@@ -30,6 +30,23 @@
       el: document.querySelector('[data-scroll-container]'),
       smooth: true
     });
+
+    var btnMe = document.getElementById('btn1');
+    var btnSoftware = document.getElementById('btn2');
+    var btnProjects = document.getElementById('btn3');
+    var btnContact = document.getElementById('btn4');
+    btnMe.addEventListener('click',sctoMe);
+    btnSoftware.addEventListener('click',sctoSoftware);
+    btnProjects.addEventListener('click',sctoProjects);
+    function sctoMe(evt) {
+      scroll.scrollTo('#Me');
+    }
+    function sctoSoftware(evt) {
+      scroll.scrollTo('#Software');
+    }
+    function sctoProjects(evt) {
+      scroll.scrollTo('#Projects');
+    }
   }
 </script>
 
