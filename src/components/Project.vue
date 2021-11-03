@@ -51,6 +51,7 @@ export default defineComponent({
 
 <template>
     <div :id="'Projects'" class="px-32 space-y-16" data-scroll-section>
+        <h3 data-scroll data-scroll-speed="3" class="text-8xl font-extrabold">Projects.</h3>
         <div class="flex space-x-16" v-for="project in projects" :key='project'>
             <img class="w-1/4" :src="imgbuild(project.img)" alt="">
             <div class="space-y-5 w-3/4">

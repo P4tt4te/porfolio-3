@@ -11,6 +11,7 @@ export default defineComponent({
 
 <template>
     <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-20 px-32">
+        <h3 data-scroll data-scroll-speed="3" class="text-8xl font-extrabold">Tools.</h3>
         <div data-scroll class="flex justify-between">
         <div class="text-6xl flex flex-col">
             <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>
