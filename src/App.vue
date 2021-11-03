@@ -8,6 +8,7 @@ import Textcarousel from './components/Textcarousel.vue'
 import Software from './components/Software.vue'
 import Project from './components/Project.vue'
 import Footer from './components/Footer.vue'
+import Contact from './components/Contact.vue'
 </script>
 
 <template>
@@ -16,7 +17,8 @@ import Footer from './components/Footer.vue'
 <Me />
 <Textcarousel />
 <Software />
-<Project /> 
+<Project />
+<Contact /> 
 <Footer />
 </template>
 
