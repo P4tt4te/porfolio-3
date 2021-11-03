@@ -1,7 +1,7 @@
 <template>
     <div data-scroll-section :id="'Contact'">
         <h3 data-scroll data-scroll-speed="3" class="text-8xl font-extrabold">Contact.</h3>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" netlify>
             <div>
                 <label for="email">Votre email</label>
                 <input type="email" name="email" id="email" required>
