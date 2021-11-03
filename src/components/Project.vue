@@ -4,7 +4,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data() {
         return { projects: [
-            {"name" : "OnMangeQuoi","desc" : "On mange quoi est un site qui repertorie des recettes de cuisine simple pour étudiants. J'ai réalisé la maquette mobile de ce site fictif","img": "onmangequoi",links : [
+            {"name" : "OnMangeQuoi","desc" : "On mange quoi est un site qui repertorie des recettes de cuisine simple pour étudiants. J'ai réalisé la maquette mobile de ce site fictif.","img": "onmangequoi",links : [
                 {
                     "name" : "behance",
                     "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
