@@ -58,7 +58,7 @@ export default defineComponent({
                 <h3 class="text-7xl">{{ project.name }}</h3>
                 <p>{{ project.desc }}</p>
                 <div class="flex space-x-5">
-                    <a v-for="link in project.links" :key='link' :href="link.src">
+                    <a target="_blank" rel="noopener noreferrer" v-for="link in project.links" :key='link' :href="link.src">
                         <img :src="imglink(link.name)" :alt="'logo ' + link.name">
                     </a>
                 </div>

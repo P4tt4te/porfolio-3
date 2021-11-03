@@ -8,6 +8,6 @@
             <p>2ème année de DUT MMI à Laval.</p>
             <p>En recherche d'un stage de 2 mois et demi à partir d'avril 2022 (1 semaine doit être faite avant cette date).</p>
         </div>
-        <a class="mt-3" href=""><span class="outline-black">Voir mon cv.</span></a>
+        <a class="mt-3" target="_blank" rel="noopener noreferrer" href="./public/cvtest_compressed.pdf"><span class="outline-black">Voir mon cv.</span></a>
     </div>
 </template>
