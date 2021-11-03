@@ -4,7 +4,7 @@
         <form name="contact" netlify>
             <div>
                 <label for="email">Votre email</label>
-                <input type="email" name="email" id="" required>
+                <input type="email" name="email" id="email" required>
             </div>
             <div>
                 <label for="message">Votre message</label>
