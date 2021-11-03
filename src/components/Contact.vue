@@ -1,6 +1,6 @@
 <template>
-    <div data-scroll-section :id="'Contact'">
-        <h3 data-scroll data-scroll-speed="3" class="text-8xl font-extrabold">Contact.</h3>
+    <div data-scroll-section :id="'Contact'" class="space-y-10">
+        <h3 data-scroll data-scroll-speed="1" class="text-8xl font-extrabold">Contact.</h3>
         <form name="contact" method="POST" netlify>
             <div>
                 <label for="email">Votre email</label>
@@ -10,7 +10,7 @@
                 <label>Message: <textarea name="message"></textarea></label>
             </div>
             <div>
-                <button type="submit">envoyer</button>
+                <button class="text-white bg-blue-light p-2 rounded" type="submit">envoyer</button>
             </div>
         </form>
     </div>
