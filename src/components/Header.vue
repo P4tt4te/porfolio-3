@@ -24,16 +24,20 @@ export default {
     },
     animmenu() {
       var cercle1 = document.getElementById('cercle1');
-      var cercle2 = document.querySelector('#cercle2');
+      var cercle2 = document.getElementById('cercle2');
       var menu = document.getElementById('menulist');
       if (this.menu == false) {
         cercle1.setAttribute("cx","76.0744");
         cercle1.setAttribute("cy","37.0004");
+        cercle2.setAttribute("cx","48.9256");
+        cercle2.setAttribute("cy","71.9996");
         menu.classList.add('on');
         this.menu = true;
       } else {
         cercle1.setAttribute("cx","43");
         cercle1.setAttribute("cy","44");
+        cercle2.setAttribute("cx","82");
+        cercle2.setAttribute("cy","65");
         menu.classList.remove('on');
         this.menu = false;
       }
