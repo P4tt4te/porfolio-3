@@ -68,6 +68,30 @@ html {
   pointer-events: none !important;
 }
 
+.listemenu {
+  display: none;
+}
+
+.listemenu.on {
+  display: flex;
+  animation: menuanim 1s ease-in-out;
+}
+
+@keyframes menuanim {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+    transform: skew(15deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: skew(0deg);
+  }
+}
 
 .ppeffet:hover {
   animation: coloranim 2s infinite alternate ease-in-out;

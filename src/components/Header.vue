@@ -25,13 +25,16 @@ export default {
     animmenu() {
       var cercle1 = document.getElementById('cercle1');
       var cercle2 = document.querySelector('#cercle2');
+      var menu = document.getElementById('menulist');
       if (this.menu == false) {
         cercle1.setAttribute("cx","76.0744");
         cercle1.setAttribute("cy","37.0004");
+        menu.classList.add('on');
         this.menu = true;
       } else {
         cercle1.setAttribute("cx","43");
         cercle1.setAttribute("cy","44");
+        menu.classList.remove('on');
         this.menu = false;
       }
       console.log('animmenu');
@@ -51,11 +54,19 @@ export default {
             <circle id="cercle1" cx="43" cy="44" r="15" fill="white"/>
             <circle id="cercle2" cx="82" cy="65" r="15" fill="white"/>
           </svg>
-          <div class="flex flex-col">
-            <span :id="'btn1'">Me.</span>
-            <span :id="'btn2'">Software</span>
-            <span :id="'btn3'">Projects</span>
-            <span :id="'btn4'">Contact</span>
+          <div id="menulist" class="flex flex-col listemenu">
+            <div>
+              <span :id="'btn1'" class="trait">Me.</span>
+            </div>
+            <div>
+              <span :id="'btn2'" class="trait">Software</span>
+            </div>
+            <div>
+              <span :id="'btn3'" class="trait">Projects</span>
+            </div>
+            <div>
+              <span :id="'btn4'" class="trait">Contact</span>
+            </div>
           </div>
         </nav>
         <div class="flex space-x-5">
