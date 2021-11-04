@@ -20,8 +20,10 @@
 
 html {
   cursor: url('/cursorbasic.svg'), pointer;
-  
+}
 
+.barre {
+  overflow-x: hidden;
 }
 
 @keyframes strike{

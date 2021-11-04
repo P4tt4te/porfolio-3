@@ -14,7 +14,7 @@ export default defineComponent({
     <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-16 lg:space-y-20 lg:px-24 xl:px-32">
         <h3 data-scroll data-scroll-speed="2" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">Tools.</h3>
         <div data-scroll class="flex flex-col-reverse sm:flex-row justify-between">
-            <div class="text-2xl md:text-4xl xl:text-6xl flex flex-col">
+            <div class="barre text-2xl md:text-4xl xl:text-6xl flex flex-col">
                 <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>
             </div>
             <div data-scroll data-scroll-speed="3" class="relative flex flex-row mb-10 sm:mb-0 justify-end">
@@ -23,7 +23,7 @@ export default defineComponent({
             </div>
         </div>
         <div data-scroll class="flex flex-col-reverse sm:flex-row justify-between">
-            <div class="text-2xl md:text-4xl xl:text-6xl flex flex-col">
+            <div class="barre text-2xl md:text-4xl xl:text-6xl flex flex-col">
                 <span v-for="graphic in graphics" :key="graphic">{{ graphic.name }}</span>
             </div>
             <div data-scroll data-scroll-speed="3" class="relative flex flex-row mb-10 sm:mb-0 justify-end">
