@@ -26,7 +26,7 @@ export default defineComponent({
             <span v-for="graphic in graphics" :key="graphic">{{ graphic.name }}</span>
         </div>
         <div data-scroll data-scroll-speed="3" class="relative flex flex-row justify-end">
-            <p class="font-Sunydale text-4xl xl:text-5xl absolute right-14 top-32 xl:top-16 xl:left-10 text-white">Graphic</p>
+            <p class="font-Sunydale text-3xl lg:text-4xl xl:text-5xl absolute  right-14 top-36 lg:top-32 xl:top-16 xl:left-10 text-white">Graphic</p>
             <img class="w-1/2 xl:w-3/4" src="/src/assets/software/blob2.svg" alt="">
         </div>
     </div>

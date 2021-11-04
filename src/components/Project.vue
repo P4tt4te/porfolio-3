@@ -53,13 +53,13 @@ export default defineComponent({
     <div :id="'Projects'" class="lg:px-24 xl:px-32 space-y-16" data-scroll-section>
         <h3 data-scroll data-scroll-speed="3" class="text-6xl xl:text-8xl font-extrabold">Projects.</h3>
         <div class="flex space-x-16" v-for="project in projects" :key='project'>
-            <img class="h-44 xl:h-full xl:w-1/4" :src="imgbuild(project.img)" alt="">
-            <div class="space-y-5 w-3/4">
+            <img class="hidden w-0 md:block md:h-44 xl:h-full xl:w-1/4" :src="imgbuild(project.img)" alt="">
+            <div class="space-y-5 w-full md:w-3/4">
                 <h3 class="text-5xl xl:text-7xl">{{ project.name }}</h3>
                 <p class="text-sm xl:text-md">{{ project.desc }}</p>
                 <div class="flex space-x-5">
                     <a target="_blank" rel="noopener noreferrer" v-for="link in project.links" :key='link' :href="link.src">
-                        <img class="w-3/4 xl:w-full" :src="imglink(link.name)" :alt="'logo ' + link.name">
+                        <img class="w-full md:w-3/4 xl:w-full" :src="imglink(link.name)" :alt="'logo ' + link.name">
                     </a>
                 </div>
             </div>
