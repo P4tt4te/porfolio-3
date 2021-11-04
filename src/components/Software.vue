@@ -10,24 +10,24 @@ export default defineComponent({
 
 
 <template>
-    <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-20 px-32">
-        <h3 data-scroll data-scroll-speed="2" class="text-8xl font-extrabold">Tools.</h3>
+    <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-20 px-24 xl:px-32">
+        <h3 data-scroll data-scroll-speed="2" class="text-6xl xl:text-8xl font-extrabold">Tools.</h3>
         <div data-scroll class="flex justify-between">
-        <div class="text-6xl flex flex-col">
+        <div class="text-4xl xl:text-6xl flex flex-col">
             <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>
         </div>
-        <div data-scroll data-scroll-speed="3" class="relative">
-           <p class="font-Sunydale text-5xl absolute top-16 left-10 text-white">Dev</p>
-           <img class="w-3/4" src="/src/assets/software/blob1.svg" alt=""> 
+        <div data-scroll data-scroll-speed="3" class="relative flex flex-row justify-end">
+           <p class="font-Sunydale text-4xl xl:text-5xl absolute right-16 top-36 xl:top-16 xl:left-10 text-white">Dev</p>
+           <img class="w-1/2 xl:w-3/4" src="/src/assets/software/blob1.svg" alt=""> 
         </div>
     </div>
     <div data-scroll class="flex justify-between">
-        <div class="text-6xl flex flex-col">
+        <div class="text-4xl xl:text-6xl flex flex-col">
             <span v-for="graphic in graphics" :key="graphic">{{ graphic.name }}</span>
         </div>
-        <div data-scroll data-scroll-speed="3" class="relative">
-            <p class="font-Sunydale text-5xl absolute top-16 left-10 text-white">Graphic</p>
-            <img class="w-3/4" src="/src/assets/software/blob2.svg" alt="">
+        <div data-scroll data-scroll-speed="3" class="relative flex flex-row justify-end">
+            <p class="font-Sunydale text-4xl xl:text-5xl absolute right-14 top-32 xl:top-16 xl:left-10 text-white">Graphic</p>
+            <img class="w-1/2 xl:w-3/4" src="/src/assets/software/blob2.svg" alt="">
         </div>
     </div>
     </div>

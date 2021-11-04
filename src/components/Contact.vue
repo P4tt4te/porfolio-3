@@ -37,7 +37,7 @@ export default defineComponent({
 
 <template>
     <div data-scroll-section :id="'Contact'" class="space-y-10">
-        <h3 data-scroll data-scroll-speed="1" class="text-8xl font-extrabold">Contact.</h3>
+        <h3 data-scroll data-scroll-speed="1" class="text-6xl xl:text-8xl font-extrabold">Contact.</h3>
         <form @submit.prevent="envoi()" class="space-y-10 p-3 flex flex-col items-center border border-blue-light" name="contact">
             <div class="space-x-5">
                 <label for="votre_email">Votre email</label>
@@ -50,7 +50,5 @@ export default defineComponent({
                 <button class="text-white bg-blue-dark p-2 rounded" type="submit">envoyer</button>
             </div>
         </form>
-        <p>{{form.email}}</p>
-        <p>{{form.message}}</p>
     </div>
 </template>
