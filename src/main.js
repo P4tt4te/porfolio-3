@@ -19,7 +19,7 @@ app.mount('#app');
 
 function cursor() {
 
-  if (window.matchMedia("(min-width: 1025px)").matches) {
+  if (window.matchMedia("(min-width: 1024px)").matches) {
     let mousePosX = 0,
       mousePosY = 0;
     const curseur = document.querySelector('#cursor');
