@@ -3,8 +3,12 @@ import { defineComponent } from 'vue';
 import axios from 'axios';
 
 export default defineComponent({
+    name: "QAForm",
     data() {
-        return { email: "",message: "" }
+        return {form: {
+            email: "",
+            message: ""
+            }  }
     },
     methods: {
         encode (data) {
