@@ -43,7 +43,7 @@ export default defineComponent({
         },
         imglink(name) {
             console.log("/src/assets/projets/links/" + name + ".svg");
-            return "/src/assets/projets/links/" + name + ".svg";
+            return new URL(`../assets/projets/links/${name}.svg`, import.meta.url).href;
         }
     }
 })
