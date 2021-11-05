@@ -39,10 +39,9 @@ export default defineComponent({
         },
     methods : {
         imgbuild(link) {
-            return "/src/assets/projets/" + link + ".png";
+            return new URL(`../assets/projets/${link}.png`, import.meta.url).href;
         },
         imglink(name) {
-            console.log("/src/assets/projets/links/" + name + ".svg");
             return new URL(`../assets/projets/links/${name}.svg`, import.meta.url).href;
         }
     }
