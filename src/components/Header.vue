@@ -86,7 +86,7 @@ export default {
         <div class="flex flex-col sm:flex-row space-x-0 space-y-2 sm:space-y-0 sm:space-x-5">
             <img @click="changeLanguage($i18n.locale)" :src="this.$t('src')" alt="">
             <img src="/src/assets/header/sunset.svg" alt="">
-            <img class="cc" src="/src/assets/header/sunset.svg" alt="">
+            <img @click="changeLanguage($i18n.locale)" class="cc" src="/src/assets/header/sunset.svg" alt="">
         </div>
     </header>
 </template>
