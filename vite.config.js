@@ -11,7 +11,6 @@ export default defineConfig({
     include: path.resolve(__dirname, './src/locales/**'),
   }),PrerenderSPAPlugin({
     staticDir: path.join(__dirname, 'dist'),
-    indexPath: path.join(__dirname, 'dist', 'index.html'),
     routes: ['/']
   })]
 })
