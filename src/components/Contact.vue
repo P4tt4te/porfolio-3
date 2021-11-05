@@ -29,7 +29,13 @@ export default defineComponent({
             ...this.form
             }),
             axiosConfig
-        );
+        )
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+        .then(document.getElementById("formfinal").innerHTML = `
+            <div>
+                Thank you! I received your submission.
+            </div>`)
         }
     }
 })
@@ -46,7 +52,7 @@ export default defineComponent({
             <div>
                 <label for="message_envoi" >Message: <textarea class=" ml-5 bg-blue-dark p-1 text-white" required="required"  @input="ev => form.message = ev.target.value" name="message"></textarea></label>
             </div>
-            <div>
+            <div id="formfinal">
                 <button class="text-white bg-blue-dark p-2 rounded" type="submit">envoyer</button>
             </div>
         </form>
