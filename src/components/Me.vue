@@ -1,3 +1,17 @@
+<script>
+import cvpdf from '/cvtest_compressed.pdf';
+
+export default ({
+    data() {
+
+    },
+    mounted() {
+        document.getElementById('pdflink').href = cvpdf;
+    }
+})
+</script>
+
+
 
 <template>
     <div :id="'Me'" data-scroll-section class="flex flex-col items-center">
@@ -8,6 +22,6 @@
             <p>Réalisation de site web et maquette.</p>
             <p>Actuellement en recherche d'un stage de 2 mois et demi à partir d'avril 2022.</p>
         </div>
-        <a class="mt-3" target="_blank" rel="noopener noreferrer" href="./public/cvtest_compressed.pdf"><span class="outline-black">Voir mon cv.</span></a>
+        <a id="pdflink" class="mt-3" target="_blank" rel="noopener noreferrer" href="./public/cvtest_compressed.pdf"><span class="outline-black">Voir mon cv.</span></a>
     </div>
 </template>
