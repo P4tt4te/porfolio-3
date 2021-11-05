@@ -9,7 +9,6 @@ import Software from './components/Software.vue'
 import Project from './components/Project.vue'
 import Footer from './components/Footer.vue'
 import Contact from './components/Contact.vue'
-import Test from './components/test.vue'
 </script>
 
 <template>
@@ -20,7 +19,6 @@ import Test from './components/test.vue'
 <Software />
 <Project />
 <Contact />
-<Test /> 
 <Footer />
 
 </template>
