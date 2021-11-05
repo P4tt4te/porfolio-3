@@ -10,7 +10,12 @@ export default {
 
   },
   mounted() {
-    console.log(this.$i18n.locale);
+    if (this.langue == 'fr') {
+      document.querySelector('#flag').src = UrlFr;
+    } else {
+      document.querySelector('#flag').src = UrlEn;
+    }
+    
     if (window.matchMedia("(min-width: 640px)").matches) {
       this.pc = true;
     } else {
@@ -22,11 +27,11 @@ export default {
     changeLanguage(l) {
       if (l == "en") {
         console.log("frtest");
-        document.querySelector('.cc').src = UrlFr;
+        document.querySelector('#flag').src = UrlFr;
         l = "fr";
       } else {
         console.log("entest");
-        document.querySelector('.cc').src = UrlEn;
+        document.querySelector('#flag').src = UrlEn;
         l = "en";
       }
       this.$i18n.locale = l;
@@ -84,9 +89,8 @@ export default {
           </div>
         </nav>
         <div class="flex flex-col sm:flex-row space-x-0 space-y-2 sm:space-y-0 sm:space-x-5">
-            <img @click="changeLanguage($i18n.locale)" :src="this.$t('src')" alt="">
+            <img id="flag" @click="changeLanguage($i18n.locale)" :src="this.$t('src')" alt="">
             <img src="/src/assets/header/sunset.svg" alt="">
-            <img @click="changeLanguage($i18n.locale)" class="cc" src="/src/assets/header/sunset.svg" alt="">
         </div>
     </header>
 </template>
