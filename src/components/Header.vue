@@ -1,6 +1,8 @@
 <script>
 
 import { useI18n } from 'vue-i18n';
+import UrlFr from '../assets/header/flags/france.svg';
+import UrlEn from '../assets/header/flags/usa.svg';
 
 export default {
   data() {
@@ -20,9 +22,11 @@ export default {
     changeLanguage(l) {
       if (l == "en") {
         console.log("frtest");
+        document.querySelector('.cc').src = UrlFr;
         l = "fr";
       } else {
         console.log("entest");
+        document.querySelector('.cc').src = UrlEn;
         l = "en";
       }
       this.$i18n.locale = l;
@@ -82,6 +86,7 @@ export default {
         <div class="flex flex-col sm:flex-row space-x-0 space-y-2 sm:space-y-0 sm:space-x-5">
             <img @click="changeLanguage($i18n.locale)" :src="this.$t('src')" alt="">
             <img src="/src/assets/header/sunset.svg" alt="">
+            <img class="cc" src="/src/assets/header/sunset.svg" alt="">
         </div>
     </header>
 </template>
