@@ -12,7 +12,7 @@ export default defineComponent({
 <template>
     
     <div :id="'Software'"  data-scroll-section class="flex flex-col space-y-16 lg:space-y-20 lg:px-24 xl:px-32">
-        <h3 data-scroll data-scroll-speed="2" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">Tools.</h3>
+        <h3 data-scroll data-scroll-speed="2" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">{{ $t('software.title') }}</h3>
         <div data-scroll class="flex flex-col-reverse sm:flex-row justify-between">
             <div class="text-2xl md:text-4xl xl:text-6xl flex flex-col">
                 <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>

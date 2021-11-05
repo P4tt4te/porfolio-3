@@ -1,5 +1,34 @@
-{
+{   
+    "nav": {
+        "1": "A propos",
+        "2": "Outils",
+        "3": "Projets",
+        "4": "Contact",
+        "desc": "cliquer ici."
+    },
     "title": {
-        "desc": "webdesign et devloppement"
+        "desc": "webdesign et devellopement"
+    },
+    "me": {
+        "title": "A propos.",
+        "d1": "Etudiant en 2ème année de DUT MMI à Laval.",
+        "d2": "Réalisation de site web et maquette.",
+        "d3": "Actuellement en recherche d'un stage de 2 mois et demi à partir d'avril 2022.",
+        "d4": "Voir mon cv."
+    },
+    "textcarousel": {
+        "title": "Compétences."
+    },
+    "software": {
+        "title": "Outils."
+    },
+    "project": {
+        "title": "Projets."
+    },
+    "contact": {
+        "1": "Votre email",
+        "2": "Votre message",
+        "button": "envoyer"
     }
+      
 }

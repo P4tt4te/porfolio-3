@@ -8,6 +8,3 @@
         <h2 data-scroll data-scroll-speed="2" class="text-center text-xl lg:text-2xl">{{ $t('title.desc') }}</h2>
     </div>
 </template>
-<style>
-
-</style>

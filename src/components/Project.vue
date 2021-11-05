@@ -50,7 +50,7 @@ export default defineComponent({
 
 <template>
     <div :id="'Projects'" class="lg:px-24 xl:px-32 space-y-16" data-scroll-section>
-        <h3 data-scroll data-scroll-speed="3" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">Projects.</h3>
+        <h3 data-scroll data-scroll-speed="3" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">{{ $t('project.title') }}</h3>
         <div class="flex md:space-x-16" v-for="project in projects" :key='project'>
             <img class="hidden md:block md:h-44 xl:h-full xl:w-1/4" :src="imgbuild(project.img)" alt="">
             <div class="space-y-5 w-full md:w-3/4">
