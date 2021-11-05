@@ -89,7 +89,7 @@ export default {
           </div>
         </nav>
         <div class="flex flex-col sm:flex-row space-x-0 space-y-2 sm:space-y-0 sm:space-x-5">
-            <img id="flag" @click="changeLanguage($i18n.locale)" :src="this.$t('src')" alt="">
+            <img id="flag" @click="changeLanguage($i18n.locale)" :src="this.UrlEn" alt="">
             <img src="/src/assets/header/sunset.svg" alt="">
         </div>
     </header>
