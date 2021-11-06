@@ -4,10 +4,54 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data() {
         return { projects: [
-            {"name" : "OnMangeQuoi","desc" : "On mange quoi est un site qui repertorie des recettes de cuisine simple pour étudiants. J'ai réalisé la maquette mobile de ce site fictif.","img": "onmangequoi",links : [
+            {"name" : "Csgostuff.pw","desc" : "Csgostuff est un site qui permet d'aider les joueurs du jeu vidéo 'Counter Strike : Global Offensive' en les informants sur les prix des différents objets du jeu. Il dispose d'un système de recherche par prix et catégorie.","img": "csgostuff",links : [
+                {
+                    "name" : "github",
+                    "src" : "https://github.com/P4tt4te/csgostuffpw"
+                },
+                {
+                    "name" : "web",
+                    "src" : "https://csgostuff.pw/"
+                }
+                
+            ]},
+            {"name" : "Doonut","desc" : "Petit site pour s'initier à la librairie webGL three.js.","img": "doonut",links : [
+                {
+                    "name" : "github",
+                    "src" : "https://github.com/P4tt4te/doonut"
+                },
+                {
+                    "name" : "web",
+                    "src" : "https://doonut.netlify.app/"
+                }
+                
+            ]},
+            {"name" : "Findreferrer*","desc" : "Site de référencement de codes partenaires, uniquement la maquette est disponible car il est en phase de developpement.","img": "findreferrer",links : [
                 {
                     "name" : "behance",
                     "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
+                },
+                {
+                    "name" : "figma",
+                    "src" : "https://www.figma.com/file/WGXswY60JMKMkhjuKCxr61/findReferrer?node-id=202%3A4"
+                }
+                
+            ]},
+            {"name" : "France covid","desc" : "Site récupérant les chiffres de l'API du gouvernement sur le covid-19, il affiche aussi la dernière date de mise à jour des données.","img": "francecovid",links : [
+                {
+                    "name" : "github",
+                    "src" : "https://github.com/P4tt4te/france-covid"
+                },
+                {
+                    "name" : "web",
+                    "src" : "https://france-covid.netlify.app/"
+                }
+                
+            ]},
+            {"name" : "LogoFolio","desc" : "Liste de logos que j'ai réalisé.","img": "logofolio",links : [
+                {
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/116812395/Logofolio"
                 }
                 
             ]},
@@ -19,21 +63,45 @@ export default defineComponent({
                 {
                     "name" : "behance",
                     "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
+                },
+                {
+                    "name" : "figma",
+                    "src" : "https://www.figma.com/file/wBtjtUxJTHhTJr1XOkrmoC/Relaxation-Project-(Copy)?node-id=1%3A5"
                 }
                 
             ]},
-            {"name" : "Csgostuff.pw","desc" : "Csgostuff est un site qui permet d'aider les joueurs du jeu vidéo 'Counter Strike : Global Offensive' en les informants sur les prix des différents objets du jeu. Il dispose d'un système de recherche par prix et catégorie.","img": "csgostuff",links : [
+            {"name" : "Netdune","desc" : "Netdune est un projet fictif réalisé dans le cadre d'un cours de marketing. L'idée est de créer une application pour rassembler et trier les posts de différents réseaux sociaux.","img": "netdune",links : [
                 {
-                    "name" : "github",
-                    "src" : "https://github.com/P4tt4te/csgostuffpw"
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/116862259/Netdune-App"
                 },
                 {
-                    "name" : "web",
-                    "src" : "https://csgostuff.pw/"
+                    "name" : "figma",
+                    "src" : "https://www.figma.com/file/wsrpvu9azodXxZ3vHsRiMh/Diapo_merca?node-id=0%3A1"
                 }
                 
-            ]}
-        
+            ]},
+            {"name" : "OnMangeQuoi","desc" : "On mange quoi est un site qui repertorie des recettes de cuisine simple pour étudiants. J'ai réalisé la maquette mobile de ce site fictif.","img": "onmangequoi",links : [
+                {
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
+                }
+                
+            ]},
+            {"name" : "Print Indy 500","desc" : "Affiche fictive pour une course automobile américaine se trouvant à indianapolis. Cette affiche à été réalisé dans un cadre scolaire.","img": "indy",links : [
+                {
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/118242879/Print-Indy-500-2021"
+                }
+                
+            ]},
+            {"name" : "Print VW","desc" : "Data visualisation fictive pour la marque automobile Volkswagen, réalisé dans le cadre d'un projet scolaire.","img": "vw",links : [
+                {
+                    "name" : "behance",
+                    "src" : "https://www.behance.net/gallery/112641813/Vw-Poster"
+                }
+                
+            ]},
             
         ]}
         },
