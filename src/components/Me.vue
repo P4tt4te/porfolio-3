@@ -1,5 +1,5 @@
 <script>
-import cvpdf from '/cvtest_compressed.pdf';
+import cvpdf from '/cv_edward_brunetiere.pdf';
 
 export default ({
     data() {
@@ -22,6 +22,6 @@ export default ({
             <p>{{ $t('me.d2') }}</p>
             <p>{{ $t('me.d3') }}</p>
         </div>
-        <a id="pdflink" class="mt-3" target="_blank" rel="noopener noreferrer" href="./public/cvtest_compressed.pdf"><span class="outline-black">{{ $t('me.d4') }}</span></a>
+        <a id="pdflink" class="mt-3" target="_blank" rel="noopener noreferrer" href="./public/cv_edward_brunetiere.pdf"><span class="outline-black">{{ $t('me.d4') }}</span></a>
     </div>
 </template>
