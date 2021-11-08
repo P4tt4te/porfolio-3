@@ -3,7 +3,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     data() {
-        return { devs: [{ name: 'HTML5'},{ name: 'CSS3'},{ name: 'JS Vanilla'},{ name: 'Vue.js'},{ name: 'NPM'},{ name: 'SQL - NoSQL'},{ name: 'Webflow (CMS)'},{ name: 'Java'}], graphics: [{ name: 'Figma'},{ name: 'Affinity'},{ name: 'Photoshop'},{ name: 'Illustrator'},{ name: 'Da Vinci Resolve'},{ name: 'Premier Pro'},{ name: 'Blender'}]}
+        return { devs: [{ name: 'HTML5'},{ name: 'CSS3'},{ name: 'JS Vanilla'},{ name: 'Github'},{ name: 'Vue.js'},{ name: 'NPM'},{ name: 'SQL - NoSQL'},{ name: 'Webflow (CMS)'},{ name: 'Java'}], graphics: [{ name: 'Figma'},{ name: 'Affinity'},{ name: 'Photoshop'},{ name: 'Illustrator'},{ name: 'Da Vinci Resolve'},{ name: 'Premier Pro'},{ name: 'Blender'}]}
     }
 })
 </script>
@@ -18,7 +18,7 @@ export default defineComponent({
                 <span v-for="dev in devs" :key="dev">{{ dev.name }}</span>
             </div>
             <div data-scroll data-scroll-speed="3" class="relative flex flex-row mb-10 sm:mb-0 justify-end">
-            <p class="font-Sunydale text-3xl lg:text-4xl xl:text-5xl absolute right-14 sm:right-16 top-10  sm:top-32 md:top-36 xl:top-52 xl:right-24 text-white">Dev</p>
+            <p class="font-Sunydale text-3xl lg:text-4xl xl:text-5xl absolute right-14 sm:right-16 top-10  sm:top-32 md:top-40 xl:top-60 xl:right-24 text-white">Dev</p>
             <img class="w-32 sm:w-1/2 xl:w-3/4" src="/src/assets/software/blob1.svg" alt=""> 
             </div>
         </div>
