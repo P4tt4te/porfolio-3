@@ -44,17 +44,9 @@ export default defineComponent({
 <template>
     <div data-scroll-section :id="'Contact'" class="space-y-10">
         <h3 data-scroll data-scroll-speed="1" class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">Contact.</h3>
-        <form @submit.prevent="envoi()" method="post" data-netlify="true" data-netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded" class="space-y-10 p-3 flex flex-col items-center border border-blue-light" name="contact">
-            <div class="space-x-5">
-                <label for="votre_email">{{ $t('contact.1') }}</label>
-                <input class="bg-blue-dark p-1 text-white" type="email" @input="ev => form.email = ev.target.value" required="required">
-            </div>
-            <div>
-                <label for="message_envoi" >{{ $t('contact.2') }}<textarea class=" ml-5 bg-blue-dark p-1 text-white" required="required"  @input="ev => form.message = ev.target.value" name="message"></textarea></label>
-            </div>
-            <div id="formfinal">
-                <button class="text-white bg-blue-dark p-2 rounded" type="submit">{{ $t('contact.button') }}</button>
-            </div>
-        </form>
+        <a href="mailto:edward.brunetiere@gmail.com">
+            <p class="mt-10 xl:text-3xl">edward.brunetiere@gmail.com</p>
+        </a>
+        <p class="xl:text-3xl">+33 652176279</p>
     </div>
 </template>
