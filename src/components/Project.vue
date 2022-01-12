@@ -107,7 +107,7 @@ export default defineComponent({
         },
     methods : {
         imgbuild(link) {
-            return new URL(`../assets/projets/${link}.png`, import.meta.url).href;
+            return new URL(`../assets/projets/${link}.webp`, import.meta.url).href;
         },
         imglink(name) {
             return new URL(`../assets/projets/links/${name}.svg`, import.meta.url).href;

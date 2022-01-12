@@ -16,7 +16,7 @@ export default ({
 <template>
     <div :id="'Me'" data-scroll-section class="flex flex-col items-center">
         <h3 class="text-5xl sm:text-6xl xl:text-8xl font-extrabold">{{ $t('me.title') }}</h3>
-        <img class="sm:max-w-md xl:max-w-xl 2xl:max-w-2xl ppeffet" data-scroll data-scroll-speed="3" src="../assets/me/pp.png" alt=""> 
+        <img class="sm:max-w-md xl:max-w-xl 2xl:max-w-2xl ppeffet" data-scroll data-scroll-speed="3" src="../assets/me/pp.webp" alt=""> 
         <div class="max-w-md xl:max-w-xl 2xl:max-w-2xl text-sm sm:text-md xl:text-xl">
             <p>{{ $t('me.d1') }}</p>
             <p>{{ $t('me.d2') }}</p>
