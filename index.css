@@ -20,7 +20,9 @@
 
 html {
   cursor: url('/cursorbasic.svg'), pointer;
+  scroll-behavior: initial;
 }
+
 
 .barre {
   overflow-x: hidden;

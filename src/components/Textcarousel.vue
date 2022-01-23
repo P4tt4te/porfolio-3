@@ -2,15 +2,13 @@
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import SwiperCore, {
-  Autoplay,Pagination
+  Autoplay
 } from 'swiper';
 import 'swiper/css';
-import 'swiper/css/pagination';
-
 
 
 // install Swiper modules
-SwiperCore.use([Autoplay,Pagination]);
+SwiperCore.use([Autoplay]);
 
 export default defineComponent({
     components: {
