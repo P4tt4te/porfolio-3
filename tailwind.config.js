@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'Inter': ['"Inter"', 'serif'],
+        'Inter': ['"Inter"', 'sans-serif'],
         'Sunydale': ['"Sunydale"', 'serif']
       }
     },

@@ -1,43 +1,8 @@
 <script>
 import { defineComponent } from 'vue';
-import axios from 'axios';
 
 export default defineComponent({
-    name: "QAForm",
-    data() {
-        return {form: {
-            email: "email",
-            message: "message"
-            }  }
-    },
-    methods: {
-        encode (data) {
-            return Object.keys(data)
-                .map(
-                    key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-                )
-                .join("&");
-        },
-        envoi() {
-            const axiosConfig = {
-                header: { "Content-Type": "application/x-www-form-urlencoded" }
-        };
-        axios.post(
-            "/",
-            this.encode({
-            "form-name": "contact",
-            ...this.form
-            }),
-            axiosConfig
-        )
-        .then(data => console.log(data))
-        .catch(error => console.log(error))
-        .then(document.getElementById("formfinal").innerHTML = `
-            <div>
-                Thank you! I received your submission.
-            </div>`)
-        }
-    }
+    
 })
 </script>
 
