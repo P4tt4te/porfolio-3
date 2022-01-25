@@ -11,6 +11,7 @@
     }
     #app {
         @apply font-Inter;
+        font-display: swap;
     }
     
 }
