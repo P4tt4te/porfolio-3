@@ -3,7 +3,7 @@ import cvpdf from '/cv_edward_brunetiere.pdf';
 
 export default ({
     data() {
-
+        return {};
     },
     mounted() {
         document.getElementById('pdflink').href = cvpdf;
