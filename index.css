@@ -7,6 +7,7 @@
         font-family: Sunydale;
         font-weight: 500;
         src: url(./fonts/Sunydale.woff) format("woff");
+        font-display: swap;
     }
     #app {
         @apply font-Inter;
