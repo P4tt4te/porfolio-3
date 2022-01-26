@@ -9,9 +9,13 @@
         src: url(./fonts/Sunydale.woff) format("woff");
         font-display: swap;
     }
+    @font-face {
+      font-family: Inter;
+      src: url(./fonts/Inter-Medium.ttf) format("truetype");
+      font-display: swap;
+    }
     #app {
-        @apply font-Inter;
-        font-display: swap;
+        font-family: Inter, serif;
     }
     
 }
