@@ -24,6 +24,32 @@
     color: white;
 }
 
+/*loader*/
+
+#loading>div {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    color: black;
+    transform: translateY(0);
+  }
+  50% {
+    color: #0066FF;
+    transform: translateY(20px);
+  }
+}
+
+#loading span {
+  --delay: 0s;
+  animation: arrows 1s var(--delay) infinite ease-in;
+}
+
 html {
   cursor: url('/cursorbasic.svg'), pointer;
   scroll-behavior: initial;
