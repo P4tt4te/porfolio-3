@@ -3,7 +3,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
     data() {
-        return { devs: [{ name: 'HTML5'},{ name: 'CSS3'},{ name: 'JS Vanilla'},{ name: 'Github'},{ name: 'Vue.js'},{ name: 'NPM'},{ name: 'SQL - NoSQL'},{ name: 'Webflow (CMS)'},{ name: 'Java'}], graphics: [{ name: 'Figma'},{ name: 'Affinity'},{ name: 'Photoshop'},{ name: 'Illustrator'},{ name: 'Da Vinci Resolve'},{ name: 'Premier Pro'},{ name: 'Blender'}]}
+        return { devs: [{ name: 'HTML5/CSS3'},{ name: 'JS Vanilla'},{ name: 'Versionning'},{ name: 'React.js'},{ name: 'Vue.js'},{ name: 'Node.JS'},{ name: 'SQL - NoSQL'},{ name: 'Webflow (CMS)'},{ name: 'Java'}], graphics: [{ name: 'Figma'},{ name: 'Affinity'},{ name: 'Photoshop'},{ name: 'Illustrator'},{ name: 'Da Vinci Resolve'},{ name: 'Premier Pro'},{ name: 'Blender'}]}
     }
 })
 </script>
