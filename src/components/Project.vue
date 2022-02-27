@@ -48,6 +48,17 @@ export default defineComponent({
                 }
                 
             ]},
+            {"name" : "Inflation","desc" : "Site calculant l'inflation d'une valeur, c'est un mini projet pour se former à react.js.","img": "inflation",links : [
+                {
+                    "name" : "github",
+                    "src" : "https://github.com/P4tt4te/inflation"
+                },
+                {
+                    "name" : "web",
+                    "src" : "https://calculinflation.netlify.app/"
+                }
+                
+            ]},
             {"name" : "LogoFolio","desc" : "Liste de logos que j'ai réalisé.","img": "logofolio",links : [
                 {
                     "name" : "behance",
