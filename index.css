@@ -53,6 +53,7 @@
 html {
   cursor: url('/cursorbasic.svg'), pointer;
   scroll-behavior: initial;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
