@@ -11,7 +11,7 @@ export default defineComponent({
                 },
                 {
                     "name" : "web",
-                    "src" : "https://csgostuff.pw/"
+                    "src" : "https://csgostuff.netlify.app/"
                 }
                 
             ]},
