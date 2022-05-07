@@ -7,20 +7,20 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@intlify/vue-i18n-loader": "^3.2.0",
-    "cssnano": "^5.0.16",
-    "locomotive-scroll": "^4.1.2",
-    "swiper": "^7.1.0",
-    "vue": "^3.2.20",
-    "vue-i18n": "^9.1.9"
+    "@intlify/vue-i18n-loader": "^3.3.0",
+    "cssnano": "^5.1.7",
+    "locomotive-scroll": "^4.1.4",
+    "swiper": "^7.4.1",
+    "vue": "^3.2.33",
+    "vue-i18n": "^9.1.10"
   },
   "devDependencies": {
-    "@intlify/vite-plugin-vue-i18n": "^2.4.0",
-    "@vitejs/plugin-vue": "^1.9.3",
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.16",
-    "vite": "^2.6.4",
+    "@intlify/vite-plugin-vue-i18n": "^2.5.0",
+    "@vitejs/plugin-vue": "^1.10.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.9.8",
     "vue-loader": "^15.9.8"
   }
 }
