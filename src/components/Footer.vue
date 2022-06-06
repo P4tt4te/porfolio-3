@@ -1,5 +1,5 @@
 <template>
-  <footer data-scroll-section class="barre h-36">
+  <footer data-scroll-section class="barre h-40">
     <div
       class="flex flex-col space-y-10 items-center sm:items-start sm:space-y-0 sm:flex-row sm:justify-between"
     >
