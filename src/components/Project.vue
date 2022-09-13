@@ -26,14 +26,14 @@ export default defineComponent({
                 }
                 
             ]},
-            {"name" : "Findreferrer*","desc" : "Site de référencement de codes partenaires, uniquement la maquette est disponible car il est en phase de developpement.","img": "findreferrer",links : [
+            {"name" : "Findreferrer","desc" : "Site de référencement de codes partenaires sans aucun tracking pour l'utilisateur. (version de test)","img": "findreferrer",links : [
                 {
                     "name" : "behance",
                     "src" : "https://www.behance.net/gallery/116861071/Production-webdesign"
                 },
                 {
-                    "name" : "figma",
-                    "src" : "https://www.figma.com/file/WGXswY60JMKMkhjuKCxr61/findReferrer?node-id=202%3A4"
+                    "name" : "web",
+                    "src" : "https://www.findreferrer.com/"
                 }
                 
             ]},
