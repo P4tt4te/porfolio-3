@@ -1,17 +1,17 @@
 {   
     "nav": {
-        "1": "A propos",
+        "1": "À propos",
         "2": "Outils",
         "3": "Projets",
         "4": "Contact",
         "desc": "cliquer ici."
     },
     "title": {
-        "desc": "webdesign et developpement"
+        "desc": "webdesign et développement"
     },
     "me": {
-        "title": "A propos.",
-        "d1": "Etudiant en 3ème année de Bachelor developpement web et mobile à Gobelins.",
+        "title": "À propos.",
+        "d1": "Etudiant en 3ème année de Bachelor développement web et mobile à Gobelins (Paris).",
         "d2": "Alternant developpeur web chez France Challenges.",
         "d3": "Disponible pour des missions freelance. 😏",
         "d4": "Voir mon cv."
